@@ -1,0 +1,46 @@
+/* Animaciones */
+@keyframes moveinLeft{
+    /*Animacion al inicio */
+    0%{
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    /*mitad de animacion*/
+    80%{
+        transform: translateX(10px);
+    }
+    /*Animacion al final*/
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes moveinRight{
+    /*Animacion al inicio */
+    0%{
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    80%{
+        transform: translateX(-10px);
+    }
+    /*Animacion al final*/
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes moveInBottom{
+    /*Animacion al inicio */
+    0%{
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    /*Animacion al final*/
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
+}

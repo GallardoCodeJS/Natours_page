@@ -1,0 +1,2 @@
+compilar: npm run compile:sass
+iniciar server: live-server

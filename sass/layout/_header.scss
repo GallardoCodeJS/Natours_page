@@ -1,0 +1,36 @@
+.header{
+    height: 95vh;    
+    background-image: linear-gradient(
+        to right bottom,
+        rgba($color-primary-light, 0.8),
+        rgba($color-primary-dark, 0.8)),
+        url('../img/hero.jpg');
+    background-size: cover; /* Always try to fit the element inside the box */
+    background-position: top;
+    position: relative; /* Ponemos relative ya que el logo es absolute */
+
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+    /* clip path corta el header */
+    /* clip-path: polygon(x y, x y, x y); */
+    /* Pagina de ayuda https://bennettfeely.com/clippy/ */
+    clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+
+    &__logo-box {
+        position: absolute;
+        top: 4rem;
+        left: 4rem;
+    }
+
+    &__logo{
+        height: 75px;
+    }
+    
+    &__text-box{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        /*traslada la posicion ya que al queda al 50% el texto queda desfazado a la derecha, con traslate quita ese margen de error*/
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+}
